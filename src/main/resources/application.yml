@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dev
+    username: root
+    password: tmp
+  jpa:
+    hibernate.ddl-auto: none
+    generate-ddl: true
+    show-sql: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+
+token:
+  secret:
+    key: The Ugly Duckling
+  expiration:
+    time: 3600000
